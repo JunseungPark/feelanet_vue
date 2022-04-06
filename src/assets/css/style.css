@@ -100,5 +100,29 @@ table.no-hover tbody tr:hover {background:transparent; cursor:auto;}
 
 .dp-flex>.divide-hor{top: auto;}
 
+/* button */
+.btn { display:inline-block; text-align:center; vertical-align: middle; border:none; line-height:1.5;  font-weight:300; border-radius:.25rem; white-space: nowrap; }
+.btn-round { display:inline-block; text-align:center; vertical-align: middle; border:none; font-weight:300; border-radius:50%; width:30px; height:30px;}
+.btn-round-s {display:inline-block; border-radius:50%; width:25px; height:25px; text-align:center; padding:2px 5px !important; vertical-align: middle}
+.btn-round-l {display:inline-block; border-radius:50%; width:76px; height:76px; text-align:center; padding:0px !important; font-size:1.4rem !important; box-shadow: 3px 5px 7px 0px rgba(0, 0, 0, 0.2);}
+.btn-round-l i {font-size:3rem !important;}
+
+.mainbtn {font-weight:400 !important; border:2px solid #fff !important; font-size:22px !important;}
+.mainbtn.btn-purple {background:#33006d;}
+
+/* button-style */
+.page-btn { padding:3px 10px; color:#fff; font-size:1rem; font-weight:700;}
+.sub-btn { padding:4px 8px; color:#fff; font-size:.85rem; font-weight:700;}
+.sm-btn { padding:2px 6px; color:#fff; font-size:.85rem; font-weight:700;}
+.ghost-btn { padding:0 25px; height:46px; color:#fff; font-size:1.1rem; font-weight:700; border-radius:10rem; vertical-align: middle;}
+.ghost-btn .time {font-size:12px !important; letter-spacing: 0.2px; font-weight: 400;} 
+.move-btn:hover { background-color: #f4f4f4; border:1px solid #666666; color:inherit; }
+
+.sidenav-btn {padding:8px 0; color:#fff; font-size:1.2rem; font-weight:700; text-align:center; font-family:'Noto Sans KR', sans-serif, 'segoe UI', 'malgun gothic', sans-serif, '돋움','dotum','굴림';}
+.sidenav-btn img {margin-right:8px;}
+
+/* button-backgroundcolor */
+.btn-blue { background-color:#2d99fb; border:1px solid #1082ea; }
+.btn-blue:hover { background-color: #1082ea; border-color:#086bc4; color:#fff;}
 
 

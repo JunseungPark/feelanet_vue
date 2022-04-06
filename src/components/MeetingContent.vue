@@ -54,10 +54,10 @@
                           </div>
                           <div class="dropdown-list-wrap p-l-s">
                               <button class="dropbtn icon-fux-more"></button>
-                              <ul class="dropdown-list right" style="display: block;">
+                              <!-- <ul class="dropdown-list right" style="display: block;">
                                   <li><a><i class="icon-fux-edit"></i> 수정</a></li>
                                   <li><a><i class="icon-fux-bin"></i> 삭제</a></li>
-                              </ul>
+                              </ul> -->
                           </div>
                       </div>
                       <div class="divide-row divide-gray"></div>

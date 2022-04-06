@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Main from './views/Main'; //import 헤더 추가
+import Main from './views/Main';
 
 export default {
   name: 'App',
