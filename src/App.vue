@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Main from '../views/Main.vue'
+import Main from './views/Main'
 
 export default {
   name: 'App',
@@ -12,6 +12,7 @@ export default {
   }
 }
 </script>
+
 
 <style>
 
