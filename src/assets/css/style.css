@@ -1,0 +1,103 @@
+/* eumSolution - style.css */
+
+@charset "utf-8";
+@import "layout.css";
+@import "common.css";
+
+/* *:hover {transition:.3s;}*/
+body {
+  scrollbar-3dLight-Color: #efefef; scrollbar-arrow-color: #dfdfdf; scrollbar-base-color: #efefef; scrollbar-Face-Color: #dfdfdf; scrollbar-Track-Color: #efefef; scrollbar-DarkShadow-Color: #efefef; scrollbar-Highlight-Color: #efefef; scrollbar-Shadow-Color: #efefef
+}
+
+/* Chrome, Safari용 스크롤 바 */
+::-webkit-scrollbar {width: 8px; height: 8px; border:none; }
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {display: block; height: 10px; background: none;}
+::-webkit-scrollbar-track {background: #f1f1f1; -webkit-border-radius: 10px; border-radius:10px; -webkit-box-shadow: inset 0 0 1px rgba(241,241,241,.2)}
+::-webkit-scrollbar-thumb {height: 50px; width: 50px; background: rgba(225,225,225,.2); -webkit-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.2)}
+
+/* link */
+a.underline { color: #007bff; text-decoration: underline; }
+a.underline:hover { color: #007bff; text-decoration: underline;}
+a.underline:hover, a.underline:focus {outline:none; text-decoration: underline;}
+
+a.hoverb { color: #444; text-decoration: none;  }
+a.hoverb:hover { color: #007bff; font-weight:700; text-decoration: underline;}
+
+
+/* table */
+.tbl-basic th, .tbl-basic td, .tbl-green th, .tbl-green td, .tbl-gray th, .tbl-gray td, .tbl-white th, .tbl-white td  { border:1px solid #ddd;  padding:5px 10px; line-height:1.5;  text-align:left;}  
+.tbl-basic td, .tbl-green td, .tbl-gray td, .tbl-white td { background:#fff; padding:5px 10px;}
+.tbl-basic th { background:#f1f6fc;}
+.tbl-green th { background:#eef8f6; color:#598179;}
+.tbl-gray th { background:#f7f7f7;}
+.tbl-white th { background:#fff; color:#999; font-weight: normal;}
+.tbl-white td { font-weight: bold;}
+.tbl-fixed {table-layout: fixed;}
+
+.tbl-basic-bdr, .tbl-bdr-view {  line-height:1.8; padding:6px 10px; text-align:left;}  
+.tbl-basic-bdr th, .tbl-bdr-view th { text-align:right; padding:6px 10px;}
+.tbl-basic-bdr td, .tbl-bdr-view td { padding:6px 10px;}
+.box-green .tbl-basic-bdr th {  color:#598179;}
+.tbl-bdr-view th { font-weight:100;}
+.tbl-bdr-view td  { font-weight:700;}
+
+th.tbl-2dep { text-align:center;}
+
+.tbl-basic th.tbl-2dep, .box-blue > .tbl-basic-bdr th.tbl-2dep { background:#daeafd;}
+.tbl-green th.tbl-2dep, .box-green > .tbl-basic-bdr th.tbl-2dep { background:#c8e9e2;}
+.tbl-gray th.tbl-2dep, .box-gray > .tbl-basic-bdr th.tbl-2dep{ background:#e1e0e0;}
+
+table.no-hover tbody tr:hover {background:transparent; cursor:auto;}
+
+/* tab */
+.nav { display:flex; display: -ms-flexbox; display: -webkit-flex; padding-left:0px; margin-bottom:0px; list-style:none; font-size:1.1rem;}
+.nav-tabs { border-bottom:1px solid #ddd;}
+.nav-tabs>li { float:left; margin-bottom:-1px; white-space: nowrap;}
+.nav>li { position:relative; display:block; }
+.nav-tabs>li>a { margin-right:2px; line-height:1.5; border:1px solid transparent; border-radius:4px 4px 0 0;}
+.nav>li>a { position:relative; display:block; padding:8px 16px;}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover { color:#0053a5; background-color:#fff; border:1px solid #2d99fb; border-bottom-color:#fff; font-weight:700;}
+.tab-content>.tab-pane { display:none;}
+.tab-content>.active { display:block;}
+
+/* list-meetingGroup -- 회의체 홈 */
+.list-meetingGroup {margin:0 -10px;}
+.list-meetingGroup > li {width:calc(25% - 20px); height:206px; margin:0 10px; margin-bottom:20px; float:left; border:1px solid #eaeaea; border-radius:10px; box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;}
+.list-meetingGroup > li:hover {cursor: pointer; border-color:rgba(45,153,241,0.6); transition:0.3s;}
+.list-meetingGroup > li > div.p-all-m {padding:13px 15px 10px 15px !important;}
+
+@media (max-width: 1600px){
+    .list-meetingGroup > li {width:calc(33.3333% - 20px);}
+}
+
+/* 약어로 표현 - 회의체 페이지 카드 UI에서 쓰임 */
+.abbr-wrap {position: relative;}
+.abbr {display: inline-block; width:47px; height:47px; line-height: 43px; border-radius:100px; text-align: center; white-space: nowrap; overflow: hidden; font-weight:100; font-size:1.1rem; font-family:'Noto Sans KR', sans-serif, 'segoe UI', 'malgun gothic', sans-serif, '돋움','dotum','굴림';}
+.abbr-wrap .abbr-bookmark {position: absolute; right:-12px; bottom:3px; display: block; background:#eaeaea; border-radius:100px; width:24px; height:24px; padding:0 0 0 5px;}
+.abbr-wrap .abbr-bookmark:hover {background:#ddd;}
+.abbr-wrap .abbr-bookmark.active {background:orange;}
+.abbr-wrap .abbr-bookmark.active i {color:#fff;}
+.abbr-wrap .abbr-bookmark.active:hover {background:#ddd;}
+
+/* dropdown type 2 - 회의체 홈에서 쓰임*/
+.dropdown-list-wrap {position: relative;}
+.dropdown-list {position: absolute; background: #fff; z-index:1; box-shadow: 3px 5px 7px 0px rgba(0,0,0,0.15); border:1px solid #ddd; border-radius:4px; overflow: hidden; display: none;}
+.dropdown-list > li {margin:0;}
+.dropdown-list > li > a {display: block; padding:8px 16px; border-bottom:1px solid #ddd; white-space: nowrap; font-size:0.9rem;}
+.dropdown-list > li > a:hover {background:#f1f6fc;}
+.dropdown-list > li:last-child > a {border:none;}
+.dropdown-list.right {right:0;} /* 회의체 홈에서 쓰임 */  
+.dropbtn {background:transparent; border:none;}
+.show {display: block;}
+
+/* divide-border */
+.divide-row {display:block; width:100%; height:1px;}
+.divide-hor{display: inline-block; width: 1px; height: 1em; position: relative; top: 0.15em;}
+.divide-gray {background:#ddd;}
+.divide-black {background:#000;}
+.divide-blue {background:#2d99fb;}
+
+.dp-flex>.divide-hor{top: auto;}
+
+
+
