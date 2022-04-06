@@ -1,5 +1,5 @@
 <template>
-  <div>헤더</div>
+  <div>풋터</div>
 </template>
 <script>
 export default {

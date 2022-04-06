@@ -27,5 +27,5 @@ export default {
 
 
 <style>
-
+  @import 'assets/styles/style.scss';
 </style>
