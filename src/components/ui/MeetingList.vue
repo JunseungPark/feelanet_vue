@@ -1,5 +1,5 @@
 <template>
-  <li onclick="location.href='meetingDetail.html'">
+  <li>
     <div class="p-all-m dp-flex vertical-top">
         <div class="abbr-wrap">
             <span class="abbr" style="background:#6d91cf; color:#fff;">생산</span>
