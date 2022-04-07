@@ -3,10 +3,7 @@ import VueRouter from 'vue-router'
 import Main from '../views/Main'
 import MeetingSection1 from '../components/MeetingSection1'
 import MeetingSection2 from '../components/MeetingSection2'
-import MeetingTab1Content from '../components/article/MeetingTab1Content'
-import MeetingTab2Content from '../components/article/MeetingTab2Content'
-import MeetingTab3Content from '../components/article/MeetingTab3Content'
-import MeetingTab4Content from '../components/article/MeetingTab4Content'
+import MeetingTabContent from '../components/article/MeetingTabContent'
 
 Vue.use(VueRouter)
 
@@ -14,6 +11,7 @@ const routes = [
   { 
     path: '/',
     name: 'Main',
+    redirect: 'Section1Content/tab1',
     component: Main,
     children: [
       {
@@ -24,22 +22,22 @@ const routes = [
           {
             path:'tab1',
             name: 'tab1',
-            component: MeetingTab1Content
+            component: MeetingTabContent
           },
           {
             path:'tab2',
             name: 'tab2',
-            component: MeetingTab2Content
+            component: MeetingTabContent
           },
           {
             path:'tab3',
             name: 'tab3',
-            component: MeetingTab3Content
+            component: MeetingTabContent
           },
           {
             path:'tab4',
             name: 'tab4',
-            component: MeetingTab4Content
+            component: MeetingTabContent
           },
         ]
       },
@@ -51,22 +49,22 @@ const routes = [
           {
             path:'tab1',
             name: 'tab1',
-            component: MeetingTab1Content
+            component: MeetingTabContent
           },
           {
             path:'tab2',
             name: 'tab2',
-            component: MeetingTab2Content
+            component: MeetingTabContent
           },
           {
             path:'tab3',
             name: 'tab3',
-            component: MeetingTab3Content
+            component: MeetingTabContent
           },
           {
             path:'tab4',
             name: 'tab4',
-            component: MeetingTab4Content
+            component: MeetingTabContent
           },
         ]
       }
