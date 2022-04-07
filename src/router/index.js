@@ -11,12 +11,12 @@ const routes = [
   { 
     path: '/',
     name: 'Main',
-    redirect: 'Section1Content/tab1',
+    redirect: 'Section1/tab1',
     component: Main,
     children: [
       {
-        path: 'Section1Content',
-        name: 'Section1Content',
+        path: 'Section1',
+        name: 'Section1',
         component: MeetingSection1,
         children: [
           {
@@ -42,8 +42,8 @@ const routes = [
         ]
       },
       {
-        path: 'Section2Content',
-        name: 'Section2Content',
+        path: 'Section2',
+        name: 'Section2',
         component: MeetingSection2,
         children: [
           {

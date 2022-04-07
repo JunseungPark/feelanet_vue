@@ -11,9 +11,6 @@ export default new Vuex.Store({
   },
   actions: {
     deleteData({ commit }, value) {
-      console.log(value)
-      console.log(commit)
-    
       let list = _.map(value.data, (e)=> {
         if (e.id === value.id) e.isDelete = true
         return e

@@ -20,12 +20,12 @@
                   <!--<span class="nav_folded"><i class="icon-fux-add"></i></span>-->
                   </a>
                   <ul class="sidenav-icon-second">
-                      <li>
-                          <a href="meetingDetail.html">
+                      <li @click="changeSection('/Section1/tab1')">
+                          <a>
                             생산임원회의
                           </a>
                       </li>
-                      <li>
+                      <li @click="changeSection('/Section2/tab1')">
                           <a>
                               사업기획회의
                           </a>
@@ -117,11 +117,11 @@ export default {
           ]
         },
         {
-          'setciont2': [
+          'section2': [
             {
               'id': 5,
               'topic': '생산',
-              'title': '생산임원회의',
+              'title': '22생산임원회의',
               'members': 12,
               'start_date': '2021.01.01',
               'end_date': '2021.12.31',
@@ -137,7 +137,7 @@ export default {
             {
               'id': 6,
               'topic': '사업',
-              'title': '사업기획회의',
+              'title': '22사업기획회의',
               'members': 12,
               'start_date': '2021.01.01',
               'end_date': '2021.12.31',
@@ -153,7 +153,7 @@ export default {
             {
               'id': 7,
               'topic': '생산',
-              'title': '생산임원회의',
+              'title': '22생산임원회의',
               'members': 12,
               'start_date': '2021.01.01',
               'end_date': '2021.12.31',
@@ -169,7 +169,7 @@ export default {
             {
               'id': 8,
               'topic': '조찬',
-              'title': '조찬회의',
+              'title': '22조찬회의',
               'members': 12,
               'start_date': '2021.01.01',
               'end_date': '2021.12.31',
@@ -191,6 +191,9 @@ export default {
     // 데이터 전송
     addJsonData(){
       this.$emit('addData', this.data)
+    },
+    changeSection(section) {
+      this.$router.replace({path: section}).catch(() => {})
     }
   },
 }

@@ -17,12 +17,13 @@ export default {
   computed: {
     ...mapState({
       section1: state => state.section1,
-      section2: state => state.section1,
+      section2: state => state.section2,
     })
   },
   methods: {
     addData(data){
       this.$store.commit("SET_SECTION1_DATA", data[0].section1)
+      console.log(data[1])
       this.$store.commit("SET_SECTION2_DATA", data[1].section2)
     },
     deleteMeeting(id){
