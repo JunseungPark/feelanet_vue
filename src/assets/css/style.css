@@ -125,4 +125,6 @@ table.no-hover tbody tr:hover {background:transparent; cursor:auto;}
 .btn-blue { background-color:#2d99fb; border:1px solid #1082ea; }
 .btn-blue:hover { background-color: #1082ea; border-color:#086bc4; color:#fff;}
 
+.notfound-item {display: flex; flex-direction: column; height:100%; overflow: auto; align-content: center; align-items: center; justify-content: center;  padding:60px 0;} /* 회의체 홈에서 쓰임 */
+
 
