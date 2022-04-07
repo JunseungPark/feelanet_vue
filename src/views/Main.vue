@@ -1,7 +1,7 @@
 <template>
   <div id="outer-wrap">
     <SideNav @addData="addData"></SideNav>
-    <router-view></router-view>
+    <router-view :section1='section1' :section2='section2'></router-view>
   </div>
 </template>
 

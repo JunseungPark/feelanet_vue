@@ -1,7 +1,7 @@
 <template>
   <div class="tab-content">
       <!--  tab 1 :: 회의체 데이터가 없는 경우 (X) -->
-      <div class="tab-pane active" id="tab1" style="display: block;">
+      <div v-if="!MeetingData.section1" class="tab-pane active" id="tab1" style="display: block;">
           <div class="notfound-item">
               <div class="img"><img src="../../assets/images/notfound_doc_2.png"></div>
               <div class="space-xl"></div>
@@ -12,11 +12,9 @@
       </div>
       
       <!--  tab 1 :: 회의체 데이터가 있는 경우 (O) -->
-      <div class="tab-pane active" id="tab1" style="display: none;">
+      <div v-if="MeetingData.section1" class="tab-pane active" id="tab1" style="display: block;">
           <div class="space-l"></div>
-          <ul class="list-meetingGroup">
-              <MeetingList></MeetingList>
-          </ul>
+          <MeetingList :MeetingListData='filterData()'></MeetingList>
       </div>
   </div>
 </template>
@@ -26,9 +24,19 @@ import MeetingList from '../ui/MeetingList';
 
 export default {
   name: 'MeetingTab1Content',
+  props: {
+    MeetingData: {
+      type: Object
+    }
+  },
   components: {
     MeetingList
-  }
+  },
+  methods: {
+    filterData(){
+      return this.MeetingData
+    }
+  },
 }
 </script>
 

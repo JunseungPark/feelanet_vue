@@ -24,7 +24,7 @@
       </ul>
       <!-- // tab item -->
       <!-- tab content -->
-      <router-view></router-view>
+      <router-view :MeetingData='section1'></router-view>
       <!-- //tab content -->
   </div>
   <!-- // inner-wrap -->
@@ -33,7 +33,12 @@
 <script>
 
 export default {
-  name: 'Meeting1Content',
+  name: 'MeetingSection1',
+  props: {
+    section1: {
+      type: Object,
+    }
+  },
   components: {
   }
 }

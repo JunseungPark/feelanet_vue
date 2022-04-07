@@ -46,7 +46,7 @@ export default {
   },
   data() {
     return {
-      // 필요 데이터
+      // 필요
       data: [
         {
           'section1': [
@@ -61,7 +61,7 @@ export default {
               'manage': '남주혁 수석(시스템설계부)',
               'organizer': '조승우 선임(전략기획부)',
               'state': 0,
-              'isStar': 1,
+              'isBookmark': 1,
               'isSecret': 0,
               'category': 1,
             },
@@ -76,12 +76,12 @@ export default {
               'manage': '남주혁 수석(시스템설계부)',
               'organizer': '조승우 선임(전략기획부)',
               'state': 1,
-              'isStar': 1,
+              'isBookmark': 1,
               'isSecret': 0,
               'category': 1,
             },
             {
-              'id': 1,
+              'id': 3,
               'topic': '생산',
               'title': '생산임원회의',
               'members': 12,
@@ -91,7 +91,7 @@ export default {
               'manage': '남주혁 수석(시스템설계부)',
               'organizer': '조승우 선임(전략기획부)',
               'state': 0,
-              'isStar': 0,
+              'isBookmark': 0,
               'isSecret': 1,
               'category': 2,
             },
@@ -106,7 +106,7 @@ export default {
               'manage': '남주혁 수석(시스템설계부)',
               'organizer': '조승우 선임(전략기획부)',
               'state': 2,
-              'isStar': 0,
+              'isBookmark': 0,
               'isSecret': 0,
               'category': 3,
             },
@@ -125,7 +125,7 @@ export default {
               'manage': '남주혁 수석(시스템설계부)',
               'organizer': '조승우 선임(전략기획부)',
               'state': 0,
-              'isStar': 1,
+              'isBookmark': 1,
               'isSecret': 0,
               'category': 1,
             },
@@ -140,7 +140,7 @@ export default {
               'manage': '남주혁 수석(시스템설계부)',
               'organizer': '조승우 선임(전략기획부)',
               'state': 1,
-              'isStar': 1,
+              'isBookmark': 1,
               'isSecret': 0,
               'category': 1,
             },
@@ -155,7 +155,7 @@ export default {
               'manage': '남주혁 수석(시스템설계부)',
               'organizer': '조승우 선임(전략기획부)',
               'state': 0,
-              'isStar': 0,
+              'isBookmark': 0,
               'isSecret': 1,
               'category': 2,
             },
@@ -170,7 +170,7 @@ export default {
               'manage': '남주혁 수석(시스템설계부)',
               'organizer': '조승우 선임(전략기획부)',
               'state': 2,
-              'isStar': 0,
+              'isBookmark': 0,
               'isSecret': 0,
               'category': 3,
             },
