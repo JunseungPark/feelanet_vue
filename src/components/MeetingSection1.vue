@@ -24,7 +24,7 @@
       </ul>
       <!-- // tab item -->
       <!-- tab content -->
-      <router-view :meetingData='section1' :tabNum='tabNum'></router-view>
+      <router-view :meetingData='section1' :tabNum='tabNum' @deleteMeeting='deleteMeeting'></router-view>
       <!-- //tab content -->
   </div>
   <!-- // inner-wrap -->
@@ -36,7 +36,7 @@ export default {
   name: 'MeetingSection1',
   props: {
     section1: {
-      type: Object,
+      type: Array,
     }
   },
   data () {
@@ -50,6 +50,9 @@ export default {
     route(tab, number) {
       this.tabNum = number;
       this.$router.push({path: tab}).catch(() => {})
+    },
+    deleteMeeting(id){
+      this.$emit('deleteMeeting', id)
     }
   },
 }

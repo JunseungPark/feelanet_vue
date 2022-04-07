@@ -64,6 +64,7 @@ export default {
               'isBookmark': 1,
               'isSecret': 0,
               'category': 1,
+              'isDelete': 0,
             },
             {
               'id': 2,
@@ -79,6 +80,7 @@ export default {
               'isBookmark': 1,
               'isSecret': 0,
               'category': 1,
+              'isDelete': 0,
             },
             {
               'id': 3,
@@ -94,6 +96,7 @@ export default {
               'isBookmark': 0,
               'isSecret': 1,
               'category': 2,
+              'isDelete': 0,
             },
             {
               'id': 4,
@@ -109,13 +112,14 @@ export default {
               'isBookmark': 0,
               'isSecret': 0,
               'category': 3,
+              'isDelete': 0,
             },
           ]
         },
         {
           'setciont2': [
             {
-              'id': 1,
+              'id': 5,
               'topic': '생산',
               'title': '생산임원회의',
               'members': 12,
@@ -128,9 +132,10 @@ export default {
               'isBookmark': 1,
               'isSecret': 0,
               'category': 1,
+              'isDelete': 0,
             },
             {
-              'id': 2,
+              'id': 6,
               'topic': '사업',
               'title': '사업기획회의',
               'members': 12,
@@ -143,9 +148,10 @@ export default {
               'isBookmark': 1,
               'isSecret': 0,
               'category': 1,
+              'isDelete': 0,
             },
             {
-              'id': 1,
+              'id': 7,
               'topic': '생산',
               'title': '생산임원회의',
               'members': 12,
@@ -158,9 +164,10 @@ export default {
               'isBookmark': 0,
               'isSecret': 1,
               'category': 2,
+              'isDelete': 0,
             },
             {
-              'id': 4,
+              'id': 8,
               'topic': '조찬',
               'title': '조찬회의',
               'members': 12,
@@ -173,6 +180,7 @@ export default {
               'isBookmark': 0,
               'isSecret': 0,
               'category': 3,
+              'isDelete': 0,
             },
           ]
         }
