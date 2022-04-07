@@ -1,19 +1,17 @@
 <template>
   <div id="outer-wrap">
     <SideNav></SideNav>
-    <MeetingContent></MeetingContent>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import SideNav from '../components/SideNav';
-import MeetingContent from '../components/MeetingContent';
 
 export default {
   name: 'Main',
   components: {
     SideNav,
-    MeetingContent,
   }
 }
 </script>

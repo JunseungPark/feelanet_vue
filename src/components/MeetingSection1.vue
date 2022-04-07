@@ -24,19 +24,17 @@
       </ul>
       <!-- // tab item -->
       <!-- tab content -->
-        <MeetingTabPage></MeetingTabPage>
+      <router-view></router-view>
       <!-- //tab content -->
   </div>
   <!-- // inner-wrap -->
 </template>
 
 <script>
-import MeetingTabPage from '../components/article/MeetingTabPage';
 
 export default {
-  name: 'MeetingContent',
+  name: 'Meeting1Content',
   components: {
-    MeetingTabPage
   }
 }
 </script>

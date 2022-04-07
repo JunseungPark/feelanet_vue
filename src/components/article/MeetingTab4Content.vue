@@ -25,7 +25,7 @@
 import MeetingList from '../ui/MeetingList';
 
 export default {
-  name: 'MeetingTabPage',
+  name: 'MeetingTab4Content',
   components: {
     MeetingList
   }
