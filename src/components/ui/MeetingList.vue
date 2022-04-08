@@ -12,14 +12,11 @@
                 <h6 class="ft-l m-b-s no-padding ellipsis">{{meeting.title}}</h6>
                 <span class="ft-m"><i class="icon-fux-user m-r-xs"></i>{{meeting.members + "명"}}</span>
             </div>
-            <div class="dropdown-list-wrap p-l-s">
-                <button class="dropbtn icon-fux-more" @click="deleteMeeting(meeting.id)"></button>
-                <DropDown :id='meeting.id' :isOpen="false"></DropDown>
-                <!-- <ul class="dropdown-list right" style="display: none;">
-                    <li><a><i class="icon-fux-edit"></i> 수정</a></li>
-                    <li><a><i class="icon-fux-bin"></i> 삭제</a></li>
-                </ul> -->
-            </div>
+            <DropDown :id='meeting.id'  @deleteMeeting='deleteMeeting'></DropDown>
+            <!-- <ul class="dropdown-list right" style="display: none;">
+                <li><a><i class="icon-fux-edit"></i> 수정</a></li>
+                <li><a><i class="icon-fux-bin"></i> 삭제</a></li>
+            </ul> -->
         </div>
         <div class="divide-row divide-gray"></div>
         <div v-if="!meeting.isSecret" class="p-all-m">
@@ -57,7 +54,7 @@ export default {
     DropDown,
   },
   methods: {
-    deleteMeeting(id) {
+    deleteMeeting(id){
       this.$emit('deleteMeeting', id)
     },
     setColor(value) {

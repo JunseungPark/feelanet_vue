@@ -23,11 +23,9 @@ export default {
   methods: {
     addData(data){
       this.$store.commit("SET_SECTION1_DATA", data[0].section1)
-      console.log(data[1])
       this.$store.commit("SET_SECTION2_DATA", data[1].section2)
     },
     deleteMeeting(id){
-      console.log(id)
       this.$store.dispatch('deleteData', {data: this.section1, id: id})
     }
   },
