@@ -26,12 +26,22 @@ export default {
       this.$store.commit("SET_SECTION1_DATA", data[0].section1)
       this.$store.commit("SET_SECTION2_DATA", data[1].section2)
     },
-    deleteMeeting(id){
-      const cloenList = _.clone(this.section1).map((e) => {
-          if (e.id === id) e.isDelete = true
-          return e;
-      });
-      this.$store.commit("DELETE_SECTION1_DATA", cloenList)
+    deleteMeeting(v){
+      let cloenList = {}
+      
+      if (v.section === 'S1') {
+        cloenList = _.clone(this.section1).map((e) => {
+            if (e.id === v.id) e.isDelete = true
+            return e;
+        });
+        this.$store.commit("DELETE_SECTION1_DATA", cloenList)
+      } else {
+        cloenList = _.clone(this.section2).map((e) => {
+            if (e.id === v.id) e.isDelete = true
+            return e;
+        });
+        this.$store.commit("DELETE_SECTION2_DATA", cloenList)
+      }
     }
   },
 }

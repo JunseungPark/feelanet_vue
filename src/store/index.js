@@ -23,6 +23,9 @@ export default new Vuex.Store({
     },
     DELETE_SECTION1_DATA(state, payload) {
       return state.section1 = payload
+    },
+    DELETE_SECTION2_DATA(state, payload) {
+      return state.section2 = payload
     }
   },
 })

@@ -52,7 +52,7 @@ export default {
       this.$router.push({path: tab}).catch(() => {})
     },
     deleteMeeting(id){
-      this.$emit('deleteMeeting', id)
+      this.$emit('deleteMeeting', {section: 'S1', id: id})
     }
   },
 }
