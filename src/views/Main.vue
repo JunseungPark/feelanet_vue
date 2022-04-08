@@ -8,6 +8,7 @@
 <script>
 import SideNav from '../components/SideNav';
 import { mapState } from "vuex";
+import {_} from 'vue-underscore';
 
 export default {
   name: 'Main',
@@ -26,7 +27,11 @@ export default {
       this.$store.commit("SET_SECTION2_DATA", data[1].section2)
     },
     deleteMeeting(id){
-      this.$store.dispatch('deleteData', {data: this.section1, id: id})
+      const cloenList = _.clone(this.section1).map((e) => {
+          if (e.id === id) e.isDelete = true
+          return e;
+      });
+      this.$store.commit("DELETE_SECTION1_DATA", cloenList)
     }
   },
 }
